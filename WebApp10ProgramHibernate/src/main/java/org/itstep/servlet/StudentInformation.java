@@ -1,6 +1,8 @@
 package org.itstep.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +24,10 @@ public class StudentInformation extends HttpServlet {
 		Person person = service.getInfoStudent(login);
 		request.setAttribute("student", person);
 		request.getRequestDispatcher("/WEB-INF/pages/student_info.jsp").forward(request, response);
+		
+		
+		//RequestDispatcher dispatcher = request.getRequestDispatcher("");
+		//dispatcher.forward(request, response);
 	}
 
 }

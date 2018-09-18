@@ -7,6 +7,8 @@ import org.itstep.dao.PersonDAO;
 import org.itstep.dao.StudentDAO;
 import org.itstep.model.Person;
 
+import javassist.bytecode.Descriptor.Iterator;
+
 public class RegStudentService {
 
 	public boolean regexData(Person person) {

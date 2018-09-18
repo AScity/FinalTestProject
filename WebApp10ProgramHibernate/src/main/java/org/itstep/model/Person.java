@@ -68,5 +68,6 @@ public class Person {
 		this.email = email;
 		this.group = group;
 		this.role = role;
-	}	
+	}
+	
 }
